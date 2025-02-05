@@ -1,0 +1,56 @@
+<h2 class="text-3xl font-semibold text-indigo-700 my-6">Your Sessions</h2>
+<ul role="list" class="mt-4 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+  <!-- Today's Sessions -->
+  <li class="col-span-1 flex rounded-lg shadow-lg bg-lightblue border border-gray-300 hover:shadow-xl transition-all duration-300">
+    <div class="flex w-16 flex-shrink-0 items-center justify-center bg-indigo-600 rounded-l-lg text-sm font-semibold text-white">YS</div>
+    <div class="flex flex-1 items-center justify-between truncate rounded-r-lg border-l border-gray-300 bg-white">
+      <div class="flex-1 truncate px-4 py-3 text-sm">
+        <a href="/playerSessions/todaysSessions" class="font-medium text-gray-900 hover:text-indigo-600 transition duration-300">Today’s Sessions</a>
+        <p class="text-gray-500 text-sm"><%= todaysCreatedSessions.length + todaysJoinedSessions.length %> Sessions</p>
+      </div>
+      <div class="flex-shrink-0 pr-2">
+        <a href="/playerSessions/todaysSessions" type="button" class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-transparent text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </li>
+
+  <!-- Created Sessions -->
+  <li class="col-span-1 flex rounded-lg shadow-lg bg-white border border-gray-300 hover:shadow-xl transition-all duration-300">
+    <div class="flex w-16 flex-shrink-0 items-center justify-center bg-indigo-600 rounded-l-lg text-sm font-semibold text-white">YS</div>
+    <div class="flex flex-1 items-center justify-between truncate rounded-r-lg border-l border-gray-300 bg-white">
+      <div class="flex-1 truncate px-4 py-3 text-sm">
+        <a href="/playerSessions/createdSessions" class="font-medium text-gray-900 hover:text-indigo-600 transition duration-300">Created Sessions</a>
+        <p class="text-gray-500 text-sm"><%= createdSessions.length %> Sessions</p>
+      </div>
+      <div class="flex-shrink-0 pr-2">
+        <a href="/playerSessions/createdSessions" type="button" class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-transparent text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </li>
+
+  <!-- Joined Sessions -->
+  <li class="col-span-1 flex rounded-lg shadow-lg bg-white border border-gray-300 hover:shadow-xl transition-all duration-300">
+    <div class="flex w-16 flex-shrink-0 items-center justify-center bg-indigo-600 rounded-l-lg text-sm font-semibold text-white">YS</div>
+    <div class="flex flex-1 items-center justify-between truncate rounded-r-lg border-l border-gray-300 bg-white">
+      <div class="flex-1 truncate px-4 py-3 text-sm">
+        <a href="/playerSessions/joinedSessions" class="font-medium text-gray-900 hover:text-indigo-600 transition duration-300">Joined Sessions</a>
+        <p class="text-gray-500 text-sm"><%= joinedSessions.length %> Sessions</p>
+      </div>
+      <div class="flex-shrink-0 pr-2">
+        <a href="/playerSessions/joinedSessions" type="button" class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-transparent text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </li>
+</ul>

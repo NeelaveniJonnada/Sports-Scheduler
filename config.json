@@ -1,0 +1,20 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "4944",
+    "database": "sport_manage_db",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "4944",
+    "database": "sport_manage_db_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "use_env_variable": "postgres://postgres:user123@127.0.0.1:5432/sport_manage_db",
+    "dialect": "postgres"
+  }
+}
