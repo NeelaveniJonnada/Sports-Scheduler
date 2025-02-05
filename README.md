@@ -1,4 +1,4 @@
-Sports Scheduler: Comprehensive Overview
+Sports Scheduler:
 The Sports Scheduler is a web-based platform developed to facilitate the scheduling and management of sports activities. The primary goal of this project is to offer a streamlined system where users can create, join, and manage sports sessions for various activities such as football, basketball, and more. The platform ensures that users can easily find others interested in similar sports and track the status of scheduled games.
 
 Key Use Cases:
